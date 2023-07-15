@@ -1,20 +1,13 @@
 import React, {useState} from 'react';
 import './styles/App.css';
+import PostItem from './components/PostItem';
 
 function App() {
   return (
     <div className="App">
-      <div className="post">
-        <div className="post__content">
-          <strong>1. JavaScript</strong>
-          <div>
-            JavaScript - язык программирования
-          </div>
-        </div>
-        <div className="post__btns">
-          <button>Удалить</button>
-        </div>
-      </div>
+      <PostItem post={{id: 1, title: 'Javascript', body: 'Description'}} />
+      <PostItem post={{id: 2, title: 'Javascript', body: 'Description'}} />
+      <PostItem post={{id: 3, title: 'Javascript', body: 'Description'}} />
     </div>
   );
 }
